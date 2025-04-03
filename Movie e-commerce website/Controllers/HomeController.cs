@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Movie_e_commerce_website.Models;
 using System.Diagnostics;
+using System.Collections.Generic;
 
 namespace Movie_e_commerce_website.Controllers
 {
@@ -15,7 +16,11 @@ namespace Movie_e_commerce_website.Controllers
 
         public IActionResult Index()
         {
-            return View();
+        var n=new List<string>();
+        n.Add("okay");
+         n.Add("yeah");
+          n.Add("today");
+            return View(n);
         }
 
         public IActionResult Privacy()
